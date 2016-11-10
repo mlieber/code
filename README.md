@@ -7,3 +7,5 @@ Hackaton for Green Trash Can application:  monitor compostable trash bin to ensu
 # Architecture
 
 Code that interacts with Tessel.io micro controller and camera sensor, in Javascript.
+Controller takes picture when trash can bin door is opened, and sends off the picture to API for analysis of whether what was just trashed in is indeed compost.
+Sends a status reply as a boolean yes/no (using a standard machine learning supervised linear regression algorithm).
